@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+          <head>
+                    <meta charset="utf-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <title>Calculator</title>
+                    <meta name="description" content="">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <link rel="stylesheet" href="style.css">
+          </head>
+          <body>
+            <div class="container">
+              <input type="text" placeholder ="0" id="a" >
+              <div>
+                <button class="operatorBtn" onclick="clr()">AC</button>
+                <button class="operatorBtn" onclick="backSpace()">DEL</button>
+                <button class="operatorBtn" onclick="percentage()">%</button>
+                <button class="operatorBtn" onclick="getTheElements('/')">/</button>
+              </div>
+
+              <div>
+                <button onclick="getTheElements(7)">7</button>
+                <button onclick="getTheElements(8)">8</button>
+                <button onclick="getTheElements(9)">9</button>
+                <button class="operatorBtn" onclick="getTheElements('*')">*</button>
+              </div>
+
+              <div>
+                <button onclick="getTheElements(4)">4</button>
+                <button onclick="getTheElements(5)">5</button>
+                <button onclick="getTheElements(6)">6</button>
+                <button class="operatorBtn" onclick="getTheElements('-')">-</button>
+              </div>
+
+              <div>
+                <button onclick="getTheElements(1)">1</button>
+                <button onclick="getTheElements(2)">2</button>
+                <button onclick="getTheElements(3)">3</button>
+                <button class="operatorBtn" onclick="getTheElements('+')">+</button>
+              </div>
+
+              <div>
+                <button onclick="getTheElements('00')">00</button>
+                <button onclick="getTheElements(0)">0</button>
+                <button onclick="getTheElements('.')">.</button>
+                <button class="equalBtn" onclick="solve()" >=</button>
+              </div>
+
+            </div>
+                                  
+                    <script src="script.js" ></script>
+          </body>
+</html>
